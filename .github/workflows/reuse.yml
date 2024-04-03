@@ -1,6 +1,12 @@
 name: Reuse other workflow
 
-on: [workflow_dispatch]
+on: 
+  workflow_dispatch:
+      inputs:
+        target:
+          description: 'Person to Greet'
+          type: String
+          required: true
 
 jobs:
   call-workflow:

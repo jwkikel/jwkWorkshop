@@ -5,8 +5,9 @@ on:
       inputs:
         target:
           description: 'Person to Greet'
-          type: String
+          type: string
           required: true
+          default: World
 
 jobs:
   call-workflow:
